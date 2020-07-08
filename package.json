@@ -12,7 +12,9 @@
   "keywords": [],
   "author": "Richard Peach - Software AG, Global Presales",
   "license": "Apache 2.0",
-  "dependencies": {},
+  "dependencies": {
+    "url-loader": "^4.1.0"
+  },
   "peerDependencies": {
     "@angular/common": "8.2.13",
     "@angular/core": "8.2.13",
@@ -44,7 +46,6 @@
     "gulp-filter": "^6.0.0",
     "gulp-replace": "^1.0.0",
     "gulp-zip": "^5.0.1",
-    "merge-stream": "^2.0.0",
     "ng-packagr": "^9.1.1",
     "ngx-bootstrap": "5.5.0",
     "rxjs": "~6.4.0",
@@ -54,7 +55,6 @@
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-external-import": "^2.2.3",
-    "webpack-stream": "^5.2.1",
     "zone.js": "~0.9.1"
   }
 }

@@ -26,6 +26,12 @@ import '~styles/index.css';
                 description: 'Displays some mirrored text',
                 component: WidgetDemo,
                 configComponent: WidgetConfigDemo,
+                previewImage: require("~styles/previewImage.png"),
+                // data: {
+                //     settings: {
+                //         noDeviceTarget: true
+                //     }
+                // }
             }
         }
     ],
