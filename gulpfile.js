@@ -4,8 +4,7 @@ const zip = require('gulp-zip');
 const ngPackagr = require('ng-packagr');
 const fs = require('fs-extra');
 const del = require('del');
-const util = require('util');
-const exec = util.promisify(require('child_process').exec);
+const execSync = require('child_process').execSync;
 const replace = require('gulp-replace');
 const path = require('path');
 
@@ -23,11 +22,11 @@ const compile = series(
             }))
             .pipe(dest('./dist/widget-library/'))
     },
-    function packLibrary() { return exec("npm pack ./widget-library", { cwd: './dist' }) }
+    async function packLibrary() { return execSync("npm pack ./widget-library", { cwd: './dist', stdio: 'inherit' }) }
 )
 
 const bundle = series(
-    function webpackBuild() { return exec("npx webpack") },
+    async function webpackBuild() { return execSync("npx webpack", {stdio: 'inherit'}) },
     function copyCumulocityJson() { return fs.copy('./cumulocity.json', './dist/widget/cumulocity.json')},
     function createZip() {
         return src('./dist/widget/**/*')
