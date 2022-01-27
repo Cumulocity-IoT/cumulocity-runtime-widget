@@ -1,5 +1,5 @@
 # Cumulocity IoT Runtime Widget Template
-Template widget for runtime loading in Cumulocity IoT using the [Cumulocity IoT Runtime Widget Loader](https://github.com/SoftwareAG/cumulocity-runtime-widget-loader) (written by Software AG Global Presales)
+This Template for runtime widget development and can be used to deploy runtime widget in application builder (written by Software AG Global Presales)
 
 ##  Building a Widget
 1. Clone this repo: 
@@ -57,7 +57,7 @@ npm run build
 9. After the build completes the `/dist` folder will contain a `widget.zip` file, this is your deployable widget
 
 ## Deploying a Widget
-See the documentation for the [Cumulocity IoT Runtime Widget Loader](https://github.com/SoftwareAG/cumulocity-runtime-widget-loader)
+Runtime widgets can be installed using [Cumulocity Application Builder](https://github.com/SoftwareAG/cumulocity-app-builder#installation)
 
 ------------------------------
 
