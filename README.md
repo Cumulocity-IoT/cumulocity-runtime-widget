@@ -1,6 +1,6 @@
 # Cumulocity IoT Runtime Widget Template
 This Template for runtime widget development and can be used to deploy runtime widget in application builder (written by Software AG Global Presales)
-
+> ### ⚠️ This project is no longer under development. ⚠️
 ##  Building a Widget
 1. Clone this repo: 
 ```
